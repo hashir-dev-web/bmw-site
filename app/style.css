@@ -1,0 +1,100 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+
+@keyframes logo-rotate {
+
+
+       100%{transform: rotate(360deg);}  
+}
+.bmw-logo{
+    animation: logo-rotate linear;
+    animation-timeline: view();
+    animation-range: enrty 0% cover 40%;
+}
+
+
+@keyframes apear {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+        overflow-x: hidden;
+
+        
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(0);
+        overflow-x: hidden;
+
+    }
+}
+
+.bmw{
+    animation: apear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    animation-duration: 300ms;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateX(100%);
+        overflow-x: hidden;
+    }
+    to{
+        opacity: 100%;
+        transform: translateX(0);
+        overflow-x: hidden;
+    }
+}
+
+.bmw-text{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
+@keyframes come {
+    from{
+        opacity: 0;
+        
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+.hero-text{
+    animation: come linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+
+}
+
+@keyframes coming {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
+
+.bmw-seats{
+    animation: coming linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 25%;
+}
+
+.hidden_footer{
+  display: hidden;
+}
+.flex_footer{
+    display: flex;
+}
